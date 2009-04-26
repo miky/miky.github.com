@@ -3,20 +3,20 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Denis Barushev</title>
-    <link href="http://barushev.net/" />
+    <title>Misha</title>
+    <link href="http://miky.github.com/" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://barushev.net/</id>
+    <id>http://miky.github.com/</id>
     <author>
-        <name>Denis Barushev</name>
-        <email>barushev@gmail.com</email>
+        <name>Misha</name>
+        <email>misha.bilenko@gmail.com</email>
     </author>
     {% for post in site.posts %}
         <entry>
             <title>{{ post.title }}</title>
-            <link href="http://barushev.net{{ post.url }}"/>
+            <link href="http://miky.github.com{{ post.url }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>
-            <id>http://barushev.net{{ post.id }}</id>
+            <id>http://miky.github.com{{ post.id }}</id>
             <content type="html">{{ post.content | xml_escape }}</content>
         </entry>
     {% endfor %}
